@@ -1,0 +1,46 @@
+xrun(64): 22.03-s012: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	22.03-s012: Started on Mar 23, 2025 at 18:55:53 CDT
+xrun
+	-f run.f
+		-64
+		-timescale 1ns/1ns
+		-uvmhome /opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv
+		-incdir ../../yapp/sv
+		-incdir ../../hbus/sv
+		-incdir ../../channel/sv
+		-incdir ../../clock_and_reset/sv
+		../../yapp/sv/yapp_pkg.sv
+		../../hbus/sv/hbus_pkg.sv
+		../../channel/sv/channel_pkg.sv
+		../../clock_and_reset/sv/clock_and_reset_pkg.sv
+		../../yapp/sv/yapp_if.sv
+		../../hbus/sv/hbus_if.sv
+		../../channel/sv/channel_if.sv
+		../../clock_and_reset/sv/clock_and_reset_if.sv
+		../../router_rtl/yapp_router.sv
+		./clkgen.sv
+		./hw_top.sv
+		tb_top.sv
+		+UVM_VERBOSITY=UVM_LOW
+		+UVM_NO_RELNOTES
+		+SVSEED=random
+	+UVM_TESTNAME=simple_test
+	-gui
+
+   User defined plus("+") options:
+	+UVM_VERBOSITY=UVM_LOW
+	+UVM_NO_RELNOTES
+
+xmsim: *W,NOMTDGUI: Multi-Threaded Dumping is disabled for interactive debug mode.
+SVSEED set randomly from command line: 736676373
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
+xcelium> source /opt/coe/cadence/XCELIUM/tools/xcelium/files/xmsimrc
+xcelium> source /opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv/files/tcl/uvm_sim.tcl
+xcelium> ...Regained control from SimVision
+-------------------------------------
+
+xcelium> 

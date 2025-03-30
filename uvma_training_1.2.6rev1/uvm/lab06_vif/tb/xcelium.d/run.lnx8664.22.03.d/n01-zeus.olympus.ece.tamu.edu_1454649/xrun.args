@@ -1,0 +1,11 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-f
+run.f
++UVM_TESTNAME=yapp_012_test
+-gui
+-access
+rwc
+-s
